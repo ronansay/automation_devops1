@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>YouTube.com Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+      <img class="youtube-logo" src="icons/youtube-logo.svg">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <!-- Put position absolute inside position relative -->
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tooltip">YouTube Apps</div>
+      </div>
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-count">3</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="current-user-picture" src="channel-pictures\channel-13.jpeg">
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-13.webp">
+          <div class="video-time">AUTO1</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel1.png">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/c/pavanoltraining" target="_blank"><span>🏆 </span>Automation Testing #
+                Java # Python # JavaScript # Automation Tech Stack @one place</a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.pavanonlinetrainings.com/" target="_blank">AutomationTechie</a>
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-14.webp">
+          <div class="video-time">AUTO2</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel2.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@RaghavPal" target="_blank"><span>🏆 </span>Test Automation Step by Step
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://automationstepbystep.com/" target="_blank">AutomationStepByStep</a>
+            </p>
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-15.webp">
+          <div class="video-time">AUTO3</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel3.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@naveenautomationlabs" target="_blank"><span>🏆 </span>Everything About
+                Test Automation</a>
+            </p>
+            <p class="video-author">
+              <a href="https://naveenautomationlabs.com/" target="_blank">AutomationLabs</a>
+            </p>
+            <p class="video-stats">
+              12M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-16.webp">
+          <div class="video-time">AUTO4</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel4.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@mukeshotwani" target="_blank"><span>🏆 </span>Learn Automation
+                Concepts</a>
+            </p>
+            <p class="video-author">
+              <a href="https://learn-automation.com/" target="_blank">LearnAutomation</a>
+            </p>
+            <p class="video-stats">
+              18M views &#183; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-17.webp">
+          <div class="video-time">AUTO5</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel5.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@edurekaIN" target="_blank"><span>🏆 </span>Cloud Computing # DevOps # BI
+                # Cyber Security # Data Science</a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.edureka.co/" target="_blank">Edureka</a>
+            </p>
+            <p class="video-stats">
+              519K views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-18.webp">
+          <div class="video-time">AUTO6</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel6.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@SimplilearnOfficial" target="_blank"><span>🏆 </span>Online Bootcamp,
+                Automation # DevOPs # Performance # Cloud Concepts</a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.simplilearn.com" target="_blank">SimpliLearn</a>
+            </p>
+            <p class="video-stats">
+              141M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-19.webp">
+          <div class="video-time">AUTO7</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel7.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@LambdaTest" target="_blank"><span>🏆 </span>Automation # DevOPs #
+                Performance # Cloud Concepts</a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.lambdatest.com " target="_blank">LambdaTest</a>
+            </p>
+            <p class="video-stats">
+              6.6M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-20.webp">
+          <div class="video-time">AUTO8</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel8.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@ExecuteAutomation" target="_blank"><span>🏆 </span>Automation and DevOPs
+                Concepts</a>
+            </p>
+            <p class="video-author">
+              <a href="https://executeautomation.com" target="_blank">ExecuteAutomation</a>
+            </p>
+            <p class="video-stats">
+              3.7M views &#183; 10 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-22.webp">
+          <div class="video-time">PERFORM1</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel9.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/c/QAInsights24" target="_blank"><span>🏆 </span>Performance Testing &
+                Cloud</a>
+            </p>
+            <p class="video-author">
+              <a href="https://qainsights.com/" target="_blank">QAInsights24</a>
+            </p>
+            <p class="video-stats">
+              20M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-23.webp">
+          <div class="video-time">PERFORM2</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel10.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@PerfMatrix" target="_blank"><span>🏆 </span>Inside World of Performance
+                Testing</a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.perfmatrix.com/" target="_blank">PerfMatrix</a>
+            </p>
+            <p class="video-stats">
+              14M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-24.webp">
+          <div class="video-time">PERFORM3</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel11.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@QABoxLetsTest" target="_blank"><span>🏆 </span>Automation Test
+                #Performance Test</a>
+            </p>
+            <p class="video-author">
+              <a href="https://github.com/qaboxletstest" target="_blank">QABoxLetsTest</a>
+            </p>
+            <p class="video-stats">
+              3M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-25.webp">
+          <div class="video-time">PERFORM4</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel12.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@TestingWorld" target="_blank"><span>🏆 </span>Test Automation @ one
+                place?</a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.thetestingworld.com/" target="_blank">TestingWorld</a>
+            </p>
+            <p class="video-stats">
+              12M views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-27.webp">
+          <div class="video-time">PROG1</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel13.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@Fireship" target="_blank"><span>🏆 </span>All Programming Java, Java
+                Script, C @ one place?</a>
+            </p>
+            <p class="video-author">
+              <a href="https://fireship.io/" target="_blank">Fireship</a>
+            </p>
+            <p class="video-stats">
+              20M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-26.webp">
+          <div class="video-time">PROG2</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel14.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@MicrosoftDevRadio" target="_blank"><span>🏆 </span>#DevOps # GITHUB #
+                Microsoft Azure</a>
+            </p>
+            <p class="video-author">
+              <a href="//github.com/msusdev" target="_blank">MSUSDEV</a>
+            </p>
+            <p class="video-stats">
+              14M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-28.webp">
+          <div class="video-time">PROG3</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel15.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@freecodecamp" target="_blank"><span>🏆 </span>All Programming and
+                Technical Courses@ one place?</a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a>
+            </p>
+            <p class="video-stats">
+              3M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-30.webp">
+          <div class="video-time">PROG4</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel16.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@CodingIsFun" target="_blank"><span>🏆 </span>Python Programming- Power
+                of Python & VBA to be more efficient in your day-to-day work?</a>
+            </p>
+            <p class="video-author">
+              <a href="https://pythonandvba.com/" target="_blank">PythonVBA</a>
+            </p>
+            <p class="video-stats">
+              12M views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-31.webp">
+          <div class="video-time">POWERBI</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/cartoon1.png">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@PavanLalwani" target="_blank"><span>🏆 </span>Learn POWERBI</a>
+            </p>
+            <p class="video-author">
+              <a href="https://pavanlalwani.com/" target="_blank">POWERBI</a>
+            </p>
+            <p class="video-stats">
+              20M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-32.webp">
+          <div class="video-time">DATASCIENCE</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/cartoon2.png">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@campusx-official" target="_blank"><span>🏆 </span>Master And Learn Data
+                Science</a>
+            </p>
+            <p class="video-author">
+              <a href="https://github.com/campusx-official" target="_blank">Data Science</a>
+            </p>
+            <p class="video-stats">
+              14M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-33.webp">
+          <div class="video-time">Programming</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/cartoon3.png">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@ProgrammingHero" target="_blank"><span>🏆 </span>All Python Programming
+                Skills</a>
+            </p>
+            <p class="video-author">
+              <a href="https://github.com/ProgrammingHero1/rotating-donut" target="_blank">Python Programming</a>
+            </p>
+            <p class="video-stats">
+              3M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-34.webp">
+          <div class="video-time">Coding</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/cartoon4.png">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/@TheCodingTrain/videos" target="_blank"><span>🏆 </span>Learn JavaScript
+                Programming Skills</a>
+            </p>
+            <p class="video-author">
+              <a href="https://github.com/CodingTrain" target="_blank">JavaScript</a>
+            </p>
+            <p class="video-stats">
+              12M views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>
